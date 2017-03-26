@@ -9,7 +9,7 @@ namespace MicroMvvm
 {
     /// <summary>
     /// http://stackoverflow.com/questions/501886/how-should-the-viewmodel-close-the-form
-    /// Во ViewModel добавить свойство bool? DialogResult
+    /// Во ViewModel добавить свойство bool? DialogResult - обязательно вызывающее RaisePropertyChanged!
     /// В View добавиьт строчки:
     /// xmlns:xc="clr-namespace:MicroMvvm;assembly=MicroMvvm"
     /// xc:DialogCloser.DialogResult="{Binding DialogResult}">
@@ -29,11 +29,13 @@ namespace MicroMvvm
         {
             var window = d as Window;
             if (window != null)
-                window.DialogResult = e.NewValue as bool?;
+            {
+                window.DialogResult = e.NewValue as bool?;                
+            }
         }
         public static void SetDialogResult(Window target, bool? value)
         {
-            target.SetValue(DialogResultProperty, value);
+            target.SetValue(DialogResultProperty, value);            
         }
     }
 }
