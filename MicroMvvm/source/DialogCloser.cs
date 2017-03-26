@@ -11,7 +11,7 @@ namespace MicroMvvm
     /// http://stackoverflow.com/questions/501886/how-should-the-viewmodel-close-the-form
     /// Во ViewModel добавить свойство bool? DialogResult
     /// В View добавиьт строчки:
-    /// xmlns:xc="clr-namespace:MicroMvvm.DialogCloser;assembly=MicroMvvm"
+    /// xmlns:xc="clr-namespace:MicroMvvm;assembly=MicroMvvm"
     /// xc:DialogCloser.DialogResult="{Binding DialogResult}">
     /// </summary>
     public static class DialogCloser
