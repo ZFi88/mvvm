@@ -12,6 +12,7 @@ namespace MicroMvvm
     /// xmlns:xc="clr-namespace:ExCastle.Wpf"
     /// xc:DialogCloser.DialogResult="{Binding DialogResult}">
     /// </summary>
+    [Obsolete("Хреново работает.")]
     public static class DialogCloser
     {
         public static readonly DependencyProperty DialogResultProperty =
