@@ -6,7 +6,7 @@ namespace MicroMvvm
 {
     public static class PropertySupport
     {
-        public static String ExtractPropertyName<T>(Expression<Func<T>> propertyExpresssion)
+        public static string ExtractPropertyName<T>(Expression<Func<T>> propertyExpresssion)
         {
             if (propertyExpresssion == null)
             {

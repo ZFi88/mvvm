@@ -50,6 +50,7 @@
     <Compile Include="source\ModelBase.cs" />
     <Compile Include="source\ObservableObject.cs" />
     <Compile Include="source\PropertySupport.cs" />
+    <Compile Include="source\RelayAsyncCommand.cs" />
     <Compile Include="source\RelayCommand.cs" />
     <Compile Include="source\ViewModelBase.cs" />
   </ItemGroup>
