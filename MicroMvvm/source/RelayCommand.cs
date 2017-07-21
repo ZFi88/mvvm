@@ -11,8 +11,8 @@ namespace MicroMvvm
     /// </summary>
     public class RelayCommand<T> : ICommand
     {
-	    private readonly Predicate<T> _canExecute;
-	    private readonly Action<T> _execute;
+	    protected readonly Predicate<T> _canExecute;
+	    protected readonly Action<T> _execute;
 
 	    /// <summary>
         /// Initializes a new instance of the <see cref="RelayCommand&lt;T&gt;"/> class.
@@ -40,12 +40,12 @@ namespace MicroMvvm
         }
 
         [DebuggerStepThrough]
-        public bool CanExecute(object parameter)
+        public virtual bool CanExecute(object parameter)
         {
             return _canExecute?.Invoke((T)parameter) ?? true;
         }
 
-        public void Execute(object parameter)
+        public virtual void Execute(object parameter)
         {
             _execute((T)parameter);
         }        
