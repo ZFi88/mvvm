@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Micro_MVVM</id>
+    <version>1.0.0</version>
+    <authors>Zhekov Fedor</authors>
+    <owners>zhekovfi</owners>
+    <projectUrl>https://github.com/ZFi88/mvvm</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Micro MVVM lib</description>
+    <releaseNotes>first</releaseNotes>
+    <copyright>Copyright 2018 Zhekov Fedor</copyright>
+    <tags>mvvm</tags>
+  </metadata>
+  <files>
+	<file src="MicroMvvm\bin\Release\" target="lib"/>
+  </files>
+</package>
